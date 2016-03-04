@@ -917,7 +917,7 @@ ProjectManager::ProjectManager() {
 	tree_vb->add_child(memnew( HSeparator ));
 
 	Button *scan = memnew( Button );
-	scan->set_text("Scan");
+	scan->set_text("Hello!");
 	tree_vb->add_child(scan);
 	scan->connect("pressed", this,"_scan_projects");
 
@@ -932,12 +932,12 @@ ProjectManager::ProjectManager() {
 
 
 	Button* create = memnew( Button );
-	create->set_text("New Project");
+	create->set_text("This is");
 	tree_vb->add_child(create);
 	create->connect("pressed", this,"_new_project");
 
 	Button* import = memnew( Button );
-	import->set_text("Import");
+	import->set_text("my change");
 	tree_vb->add_child(import);
 	import->connect("pressed", this,"_import_project");
 
@@ -952,7 +952,7 @@ ProjectManager::ProjectManager() {
 	tree_vb->add_spacer();
 
 	Button * cancel = memnew( Button );
-	cancel->set_text("Exit");
+	cancel->set_text("Goodbye");
 	tree_vb->add_child(cancel);
 	cancel->connect("pressed", this,"_exit_dialog");
 
@@ -964,7 +964,7 @@ ProjectManager::ProjectManager() {
 	String cp;
 	cp.push_back(0xA9);
 	cp.push_back(0);
-	l->set_text(cp+" 2008-2016 Juan Linietsky, Ariel Manzur.");
+	l->set_text(cp+" 2008-2016 Juan Linietsky, Ariel Manzur. Also, 3/3/2016 Reuben edited this for an assignment");
 	l->set_align(Label::ALIGN_CENTER);
 	vb->add_child(l);
 
